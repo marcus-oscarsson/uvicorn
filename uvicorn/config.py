@@ -70,6 +70,7 @@ LOOP_SETUPS: Dict[LoopSetupType, Optional[str]] = {
     "auto": "uvicorn.loops.auto:auto_loop_setup",
     "asyncio": "uvicorn.loops.asyncio:asyncio_setup",
     "uvloop": "uvicorn.loops.uvloop:uvloop_setup",
+    "asyncio-gevent": "uvicorn.loops.asynciogevent:asyncio_setup",
 }
 INTERFACES: List[InterfaceType] = ["auto", "asgi3", "asgi2", "wsgi"]
 
